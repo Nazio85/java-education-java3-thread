@@ -78,7 +78,7 @@ public class Main {
         //2. Написать совсем небольшой метод, в котором 3 потока построчно пишут
         // данные в файл (штук по 10 записей, с периодом в 20 мс)
 
-        reader = new InputStreamReader(new FileInputStream("src/tets.txt"));
+        reader = new InputStreamReader(new FileInputStream("src/test.txt"));
         writer = new BufferedWriter(new FileWriter("src/file.txt", true));
 
         new Thread(() -> {
